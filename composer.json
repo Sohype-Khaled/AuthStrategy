@@ -1,0 +1,33 @@
+{
+	"name": "codtail/auth-strategy",
+	"description": "Authentiaction Provider with multiple startegies",
+	"type": "library",
+	"license": "MIT",
+	"authers": [
+		{
+			"name": "Joesph Makram",
+			"email": "jojomak350@gmail.com "
+		},
+		{
+			"name": "Sohype Khaled",
+			"email": "sohype.mop@gmail.com "
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Codtail\\AuthStrategy\\": "src",
+			"Codtail\\AuthStrategy\\Tests\\": "tests"
+		}
+	},
+	"require-dev": {
+		"orchestra/testbench": "^6.0",
+		"phpunit/phpunit": "^9.5"
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"Codtail\\AuthStrategy\\BlogPackageServiceProvider"
+			]
+		}
+	}
+}
